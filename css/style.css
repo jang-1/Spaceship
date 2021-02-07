@@ -1,5 +1,6 @@
 :root {
   --primary-color: #09fced;
+  --secondary-color: #510303;
   --size-unit: 64px;
   --ships-animation-time: 200ms;
   --explosions-animation-time: 600ms;
@@ -125,6 +126,14 @@ body {
   position: absolute;
 }
 
+.hide {
+  display: none;
+}
+
+.hit {
+  background-color: var(--secondary-color);
+}
+
 @keyframes move-8-units-X {
   from {
     background-position-x: 0px;
@@ -168,8 +177,4 @@ body {
   to {
     background-position-x: calc(var(--size-unit) * -34);
   }
-}
-
-.hide {
-  display: none;
 }
